@@ -1,11 +1,13 @@
-import express from 'express'
-import morgan from 'morgan'
-import cors from 'cors'
-const app = express()
+import express from 'express';
+import morgan from 'morgan';
+import cors from 'cors';
+import reservaRoutes from './routes/reserva.routes.js'; 
 
-app.use(morgan('dev'))
+const app = express();
+
+app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.use("/api", reservaRoutes);
 
