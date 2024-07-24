@@ -1,0 +1,59 @@
+/* src/Home.css */
+
+/* Estilo general para la página de inicio */
+.home {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para el encabezado de la página de inicio */
+  .home-header {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilo para los títulos en el encabezado */
+  .home-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Estilo para el contenido principal */
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Estilo para las tarjetas */
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  
+  /* Estilo para las imágenes en las tarjetas */
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  /* Estilo para los títulos y párrafos en las tarjetas */
+  .card h2 {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
