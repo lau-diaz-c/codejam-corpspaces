@@ -11,7 +11,7 @@ const reservaSchema = new mongoose.Schema({
     },
     hora: {
         // será mejor que sea un entero y lo mantengamos entre 0000 y 2400 para poder ser mas exactas?
-        type: Number,
+        type: String,
         required: true,
     },
     sala: {

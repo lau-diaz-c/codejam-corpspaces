@@ -4,6 +4,8 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import OtroMainContent from './components/OtroMainContent';
+
 
 export default function App() {
   return (
@@ -12,7 +14,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reservas" element={<MainContent />} />
+          <Route path="/reservas" element={<OtroMainContent />} />
         </Routes>
         <Footer />
       </div>

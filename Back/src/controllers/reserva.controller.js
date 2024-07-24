@@ -1,7 +1,8 @@
-import { trusted } from "mongoose";
-import Reserva from "/../models/reserva.model.js"
+
+import Reserva from "../models/reserva.model.js"
 
 export const createReserva = async (req, res) => {
+    const { nombre, dia, hora, sala } = req.body
     const newReserva = new Reserva({
         nombre,
         dia,
