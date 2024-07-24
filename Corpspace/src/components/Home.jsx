@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Container component="main" maxWidth="lg" style={{ flexGrow: 1, paddingTop: '20px', paddingBottom: '20px' }}>
       <Typography variant="h4" gutterBottom>
-        Bienvenido a la Reserva de Salas
+        Bienvenido a CorpSpace
       </Typography>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="body1">
