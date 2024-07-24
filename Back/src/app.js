@@ -7,4 +7,6 @@ app.use(morgan('dev'))
 app.use(express.json());
 app.use(cors())
 
+app.use("/api", reservaRoutes);
+
 export default app;
