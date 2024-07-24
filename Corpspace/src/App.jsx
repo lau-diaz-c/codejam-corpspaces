@@ -1,12 +1,22 @@
-import React from 'react'
-import Calendar from 'react-calendar'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Calendar/>
-    </div>
-  )
+    <Router>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reservas" element={<MainContent />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
