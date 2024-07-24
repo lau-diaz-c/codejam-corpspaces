@@ -27,4 +27,26 @@ export const deleteReserva = async (req, res) => {
     if (!reserva) return res.status(404).json({
         message: 'Reserva no existe'
     })
+    return res.sendStatus(204);
 }
+
+export const getReserva = async (req, res) => {
+    const reserva = await Reserva.find(req.params.id)
+    if(!reserva) return res.status(404).json({
+        message: 'Reserva no existe'
+    })
+    return res.json(reserva)
+}
+
+export const getReservas = async (req, res) => {
+    try {
+        const reservas = await Reserva.find();
+        if (reservas.length === 0) {
+            return res.status(404).json({ message: 'No se encontraron reservas' });
+        }
+        res.json(reservas);
+    } catch (error) {
+        console.error('Error al obtener reservas:', error);
+        res.status(500).json({ message: 'Error interno del servidor' });
+    }
+};
